@@ -32,7 +32,7 @@ class TagsController extends Controller
         $tag = new \App\Tag;
         $tag->name = $request->name;
         $tag->color = $request->color;
-        $tag save();
+        $tag->save();
 
         return $tag;
     }
@@ -65,7 +65,7 @@ class TagsController extends Controller
         $tag = \App\Tag::find($id);
         $tag->name = $request->name;
         $tag->color = $request->color;
-        $tag save();
+        $tag>save();
 
         return $tag;
     }
@@ -80,8 +80,8 @@ class TagsController extends Controller
     {
         //
         $tag = \App\Tag::find($id);
-        $tag delete();
+        $tag->delete();
 
-        return $tag
+        return $tag;
     }
 }

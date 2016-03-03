@@ -63,7 +63,7 @@ class LanesController extends Controller
 
         $lane = \App\Lane::find($id);
         $lane->name = $request->name;
-        $lane save();
+        $lane->save();
     }
 
     /**
@@ -76,7 +76,7 @@ class LanesController extends Controller
     {
         //
         $lane = \App\Lane::find($id);
-        $lane delete();
+        $lane->delete();
 
         return $lane;
     }
